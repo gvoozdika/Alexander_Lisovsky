@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <META charset="utf-8">
+    <TITLE>Пример страницы</TITLE>
+</HEAD>
+
+<BODY>
+    <h1>Форма заявки на работу в зоопарк</h1>
+    <P>Пожалуйста заполните форму. Обязательные поля помечены <sup style="color: red;">*</sup></P>
+    <p><strong>Простая форма поиска с вариантами:</strong></p>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Контактная информация</legend>
+        <label>
+            Имя <sup style="color: red;">*</sup>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Запрос"><br>
+        </label>
+        <label>
+            Телефон
+            &nbsp&nbsp&nbsp&nbsp<input type="text" name="number"><br>
+        </label>
+        <label>
+            Email <sup style="color: red;">*</sup>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" name="email">
+        </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Персональная информация</legend>
+        <label>
+            Возраст <sup style="color: red;">*</sup>
+            <input type="number" name="Возраст"><br>
+        </label>
+        <label>
+            Пол
+            <select>
+                <option>Женщина</option>
+                <option>Мужчина</option>
+            </select>
+        </label><br>
+        <label>
+            Перечислите личные качества
+            &nbsp&nbsp&nbsp&nbsp<textarea name="name" cols="20" rows="5"></textarea>
+        </label>
+        </fieldset>
+
+        <fieldset>
+            <table>
+                <tr>
+                    <th>Зебра</th>
+                    <th>Кошак</th>
+                    <th>Анаконда</th>
+                    <th>Человек</th>
+                </tr>
+                <tr>
+                    <th>Зебра</th>
+                    <th>Кошак</th>
+                    <th>Анаконда</th>
+                    <th>Человек</th>
+                </tr>
+            </table>
+        </fieldset>
+</BODY>
+
+</HTML>
