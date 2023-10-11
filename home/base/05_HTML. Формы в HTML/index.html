@@ -1,16 +1,83 @@
-<!DOCTYPE html> 
-<HTML> 
-        <HEAD> 
-            <META charset="utf-8"> 
-            <TITLE>Пример страницы</TITLE> 
-        </HEAD> 
-        <BODY> 
-            <p><strong>Простая форма поиска с вариантами:</strong></p>
-            <form action="http://sc.it-academy.by/fe/form.php">
-                <fieldset>
-                    <legend>Строка поиска</legend>
-                </fieldset>    
-            </form>
-    
-        </BODY> 
-</HTML> 
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <META charset="utf-8">
+    <TITLE>Пример страницы</TITLE>
+</HEAD>
+
+<BODY>
+    <p><strong>Простая форма поиска с вариантами:</strong></p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset style="width: 700px;">
+            <legend>Строка поиска</legend>
+            <input type="text" name="Запрос">
+            <input type="button" value="Искать"><br>
+            <label>
+                <input type="radio" name="на сайте">
+                на сайте
+                <input type="radio" name="в google">
+                в google
+            </label>
+            <br>
+            <label><em>Длина запроса не более 10 символов</em></label>
+        </fieldset>
+
+        <p><strong>Простая форма поиска с вариантами:</strong></p>
+        <fieldset style="width: 700px;">
+            <legend>Строка поиска</legend>
+            <input type="text" autofocus required name="text">
+            <label>*</label>
+            <input type="button" value="Искать"><br>
+            <label>
+                <input type="radio" name="на сайте">
+                на сайте
+            </label>
+            <label>
+                <input type="radio" name="в google">
+                в google
+            </label><br>
+            <label><em>* - обязательное поле<br>
+                    Автофокус в поле поиска:</em></label>
+        </fieldset>
+
+        <p><strong>Простая форма авторизации:</strong></p>
+        <fieldset style="width: 700px;">
+            <legend>Авторизируйтесь </legend><br>
+            <input type="text" name="Логин">
+            <label>* Логин</label><br>
+            <input type="text" name="Пароль"><label> * Пароль</label><br>
+            <label>
+                <input type="checkbox" name="Оставаться в системе">
+                Оставаться в системе
+            </label><br>
+            <input type="button" value="Войти"><br>
+            <label>* - обязательное поле</label>
+        </fieldset>
+
+        <p><strong>Опрос(голосование):</strong></p>
+        <fieldset style="width: 700px;">
+            <label>
+                <input type="radios" name="ничего">
+                ничего
+            </label><br>
+            <label>
+                <input type="radio" name="неплохо">
+                неплохо
+            </label>
+            <label><br>
+                <input type="radio" name="хорошо">
+                хорошо
+            </label>
+            <label><br>
+                <input type="radio" name="супер">
+                супер
+            </label><br>
+            <input type="submit" name="submit">
+        </fieldset>
+
+    </form>
+
+</BODY>
+
+</HTML>
