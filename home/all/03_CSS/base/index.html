@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.MenuLevel1 { width: 100px}
-        div.MenuLevel1 > div { background-color: #ccc; border: solid #000 1px; position: relative; cursor: pointer }
-        div.MenuLevel2 { width: 150px; display: none }
-        div.MenuLevel2 > div { background-color: #ccc; border: solid #000 1px; cursor: pointer }
-        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+        div.MenuLevel1 {
+            width: 1000px;
+        }
+
+        div.MenuLevel1>div {
+            background-color: #ccc;
+            border: solid #000 1px;
+            position: relative;
+            cursor: pointer;
+            float: left;
+            width: 150px;
+            color: gray;
+            border-radius: 5px;
+            height: 30px;
+            text-align: center;
+        }
+
+        div.MenuLevel2 {
+            width: 150px;
+            display: none
+        }
+
+        div.MenuLevel2>div {
+            background-color: #ccc;
+            border: solid #000 1px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        div.MenuLevel1>div:hover div.MenuLevel2 {
+            display: block;
+            position: absolute;
+            left: 0%;
+            top: 90%;
+            z-index: 1;
+            border: solid #000 1px;
+            border-radius: 5px
+        }
+
+        @media all and (max-width: 1000px) {
+            .div.MenuLevel1 {
+                width: 200px;
+            }
+
+            div.MenuLevel1 {
+                width: 100px
+            }
+
+            div.MenuLevel1>div {
+                background-color: #ccc;
+                border: solid #000 1px;
+                position: relative;
+                cursor: pointer
+            }
+
+            div.MenuLevel2 {
+                width: 150px;
+                display: none
+            }
+
+            div.MenuLevel2>div {
+                background-color: #ccc;
+                border: solid #000 1px;
+                cursor: pointer
+            }
+
+            div.MenuLevel1>div:hover div.MenuLevel2 {
+                display: block;
+                position: absolute;
+                left: 80%;
+                top: 90%;
+                z-index: 1
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class='MenuLevel1'>
         <div>
@@ -67,4 +138,5 @@
 
     </div>
 </body>
+
 </html>

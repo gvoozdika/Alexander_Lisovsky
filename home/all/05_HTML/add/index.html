@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            font-weight: bold;
+        }
+       table{
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Заполните анкету</h1>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <input type="text" placeholder="Фамилия" pattern="[А-Яа-я]"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <fieldset>
+                        <legend>Паспортные данные</legend>
+                        <input type="text"><input type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дата рождения</legend>
+                        <input type="text"><br>
+                        <select name="month">
+                            <option>Январь</option>>
+                            <option>Февраль</option>>
+                            <option>Март</option>>
+                            <option>Апрель</option>>
+                            <option>Май</option>>
+                            <option>Июнь</option>>
+                            <option>Июль</option>>
+                            <option>Август</option>>
+                            <option>Сентябрь</option>>
+                            <option>Октябрь</option>>
+                            <option>Ноябрь</option>>
+                            <option>Декабрь</option>>
+                        </select><br>
+                        <input type="number">
+                    </fieldset>
+                    <select name="country">
+                        <option>РБ</option>
+                        <option>РФ</option>
+                    </select>
+                    <p>Адрес:</p><br>
+                    <textarea name="adress" cols="15" rows="5"></textarea>
+                </fieldset>
+                
+                
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
