@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-float.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-prototype.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-rtl.min.css"
+        crossorigin="anonymous">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .cell1 {
+            color: rgb(62 185 224);
+        }
+
+        .cell1 a {
+            color: rgb(62 185 224);
+        }
+
+        .grid-x {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> HOW-TO: Программа на Python, Часть 1</h1>
+    <div class="container">
+        <div class="grid-x">
+            <div class="cell1 medium-12 large-3">
+                <ul>
+                    <li>
+                        <em> <a href="#">Программа на Python - часть 1</a></em>
+                    </li>
+                    <li>
+                        <em> <a href="#">Программа на Python - часть 2</a></em>
+                    </li>
+                    <li>
+                        <em> <a href="#">Программа на Python - часть 3</a></em>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell2 medium-12 large-9">
+                <h2> HOW-TO: Программа на Python, Часть 1</h2>
+            </div>
+        </div>
+
+        <div class="grid-x">
+            <div class="cell1 medium-12 large-3">
+                <h2 id="Content">Содержание</h2>
+                <ul>
+                    <li><a href="#">Наша первая Программа</a>
+                    </li>
+                    <li><a href="#">Пример цикла FOR</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell2 medium-12 large-9">
+                <p>Из множества существующих языков программирования Python - один из самых легких в изучении. Он создан
+                    в
+                    конце
+                    80-х годов ХХ века, но с тех пор он сильно изменился
+                    Хотя Python входит в состав большинства дистибутивов Linux, на него часто не обращают внимания при
+                    выборе
+                    языка
+                    изучения.
+                    В этой статье мы рассмотрим создание консольных приложений, а в следующей - программирование
+                    графических
+                    интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо сейчас.
+                </p>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell1 medium-12 large-3">
+                <h2>Наша первая программа</h2>
+            </div>
+            <div class="cell2 medium-12 large-9">
+                <p>Наберем код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберемся, что
+                    делает
+                    каждая
+                    строка и пойдем дальше.
+                </p>
+                <p> Введите эти 4 строки:</p>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell1 medium-12 large-3">
+                <p><a href="#">К содержанию</a></p>
+            </div>
+            <div class="cell2 medium-12 large-9">
+                <code>
+                #!/usr/bin/env python<br>
+                print 'Hello. I am python program.'<br>
+                name = raw_input ("What is your name?")<br>
+                print "Hello there," + name "!"<br>
+            </code>
+                <p>Это все. Сохраните файл как <strong>hello.ру</strong>
+                    в любом месте. Я предлагаю сохранить его в папке <strong>python_examples</strong> в домашнем
+                    каталоге.
+                    Этот
+                    пример показывает, как просто написать программу на Python. Для запуска программы нужно сделать ее
+                    файл
+                    исполняемым. Для этого введите в терминале
+                </p>
+                <p><em><u><strong>chmod +x hello.ру</strong></u></em></p>
+                <p>в папке, в которой вы сохранили программу. Теперь запустите ее
+                </p>
+                <code>
+        greg@earth:~/python_examples$ ./hello.ру<br>
+        Hello. I am a python program.<br>
+        What is your name? Ferd Burphel<br>
+        Hello there, Ferd Burphel!<br>
+        greg@earth:~/python_examples$<br>
+                </code>
+                <p>Вот и все.</p>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell1 medium-12 large-3">
+                <h2>Пример цикла For</h2>
+                <p><a href="#">К содержанию</a></p>
+            </div>
+            <div class="cell2 medium-12 large-9">
+                <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и наберите
+                    следующую
+                    программу:</p>
+                <code>
+    #!/usr/bin/env python<br>
+    for cntr in rahge(0,10):<br>
+    print cntr<br>
+            </code>
+                <p><em>Не забудьте поставить символ табуляции перед строкой &#171print cntr&#187.</em>Это важно. В
+                    Python
+                    для
+                    указывания на блоки кода используются не круглые &#171(&#187 или фигурные &#171{&#187 скобки как в
+                    других
+                    языках
+                    программирования, а отступы.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
